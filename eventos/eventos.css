@@ -1,0 +1,274 @@
+/* estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/**/
+
+.interface {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  margin-right: 16px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ACACBA;
+  font-size: 14px;
+}
+
+li {
+  margin: 16px 0;
+}
+
+
+
+@media (max-width: 1250px) {
+  .interface {
+    flex-direction: column;
+  }
+}
+
+/* estilos do cabeçalho */
+header {
+  padding: 40px 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #595959;
+  text-decoration: none;
+  display: inline-block;
+  transition: .1s;
+}
+
+header a:hover {
+  color: #000000;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0% 18px;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  border-top: 2px solid #898989;
+  box-sizing: border-box;
+  height: 2px;
+}
+
+/* fim */
+
+.eventos-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.eventos-header h1 {
+  font-size: 32px;
+  color: #cb102a;
+}
+
+.eventos-header p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.grid-container {
+  max-width: 1280px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.evento-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.evento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.evento-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.evento-card h2 {
+  font-size: 18px;
+  color: #cb102a;
+  margin: 10px 0;
+}
+
+.evento-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn-evento {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #cb102a;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.btn-evento:hover {
+  background-color: #a00d23;
+}
+
+/* Configurações do grid */
+.grid-container {
+  max-width: 1280px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Dois cards lado a lado */
+    gap: 15px; /* Menor espaço entre os cards */
+  }
+
+  .evento-card {
+    padding: 10px; /* Reduz o espaçamento interno dos cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Um card por linha em telas muito pequenas */
+  }
+
+  .evento-card {
+    padding: 8px; /* Ajusta o espaçamento interno */
+  }
+
+  .evento-card h2 {
+    font-size: 16px; /* Reduz o tamanho do título */
+  }
+
+  .evento-card p {
+    font-size: 12px; /* Reduz o tamanho do texto */
+  }
+
+  .btn-evento {
+    padding: 8px 16px; /* Ajusta o tamanho do botão */
+    font-size: 14px;
+  }
+}
+/*footer*/
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo para o logo */
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Estilo para os links */
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #aaa;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 15px;
+    gap: 10px;
+  }
+}
