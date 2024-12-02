@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     nome: "Forró", 
                     local: "Vale do Anhangabaú", 
                     data: "Quintas das 20h às 22h", 
-                    imagem: "/imagens/f1.jpg",
+                    imagem: "../imagens/f1.jpg",
                     link: "https://www.instagram.com/forrodo.bom/"
                 },
                 { 
